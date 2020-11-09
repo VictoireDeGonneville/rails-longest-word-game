@@ -1,0 +1,17 @@
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@300&family=Xanh+Mono&display=swap" rel="stylesheet">
+
+
+<div class="title">
+<h1>WELCOME TO THE LONGEST WORD GAME</h1>
+</div>
+
+<div class="grid">
+<h2>Grid: <%= @grid %></h2>
+
+<form action="<%= result_path %>" method="get">
+  <input type="text" name="attempt">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="GO">
+</form>
+</div>
